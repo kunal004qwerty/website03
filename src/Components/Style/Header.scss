@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Roboto:wght@100;700&family=Rubik&display=swap');
+
+
+.header{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    position:absolute;
+
+    nav{
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo{
+            margin-left: 1rem;
+
+            h1{
+                text-transform: uppercase;
+                font-size: 30px;
+                color: rgb(53,51,51);
+            }
+        }
+        //!--------------
+
+        .ul-item{
+            display: flex;list-style: none;
+            align-items: center;
+
+            li{
+                margin-right: 3.5rem;
+
+                a{
+                    color: rgb(44,40,40);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                a:hover{
+                    border-bottom: 3px solid black;
+                   // transition: 1s ;
+                }
+            }
+            //!---------
+            .hambruger-menu{
+                .menu{
+                    cursor: pointer;
+                    font-size: 30px;
+                    color: rgb(73,71,71);
+                }
+            }
+        }
+        //!---------------
+
+        
+    }
+
+
+    .slider {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 0;
+        z-index: 1;
+        transition: 1s ease;
+        right: -100%;
+
+
+        .slider-ul{
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            list-style: none;
+            align-items: center;
+            text-align: center;
+            gap: 4rem;
+
+            li{
+                width: 400px;
+               
+                border: 2px solid #fff;
+                padding: 45px;
+
+                a{
+                    text-decoration: none;
+                    font-size: 45px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .slider.active {
+        right: 0;
+
+    }
+
+}

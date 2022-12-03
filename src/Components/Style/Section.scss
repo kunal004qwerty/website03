@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Roboto:wght@100;700&family=Rubik&display=swap');
+
+
+.main-section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(216, 216, 216);
+    font-family: 'Poppins', sans-serif;
+    border: 7px solid black;
+
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .texts {
+            margin-left: 10rem;
+            text-transform:uppercase ;
+
+            h1{
+                color: gray;
+            }
+            .h1-big{
+                font-size: 60px;
+                color: rgb(61,60,60);
+            }
+            p{
+                border-top: 2px solid gray;
+                color: gray;
+                width: 70%;
+                text-transform: lowercase;
+            }
+            button{
+                margin-top:2.4rem ;
+                padding: 14px 35px;
+                cursor: pointer;
+                background-color: rgb(59,55,55);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        //!---------------
+        
+        .image {
+            // type in google clip path generator
+            clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 39% 100%, 0% 50%, 36% 0);   
+            background-color: rgba(0, 0, 0, 0.596);
+            //height: ;
+        
+            img{
+                margin-top: 5rem;
+                height: 500px;
+                width: 600px;
+                object-fit: contain;
+            }
+        
+        }
+    }
+    //!--------------
+  
+
+}
